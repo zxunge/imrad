@@ -38,7 +38,8 @@ jobs:
           cmake:p
           gcc:p
           ninja:p
-          zip:p
+        install: >-
+          zip
 
     #- name: Configure CMake
     #  shell: msys2 {0}
