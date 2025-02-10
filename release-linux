@@ -9,7 +9,7 @@ rm -rf build
 mkdir install
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../install ..
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../install ..
 make -j8 install
 if [ "$?" -ne 0 ]; then 
 exit 1
