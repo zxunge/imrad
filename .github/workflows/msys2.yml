@@ -38,6 +38,7 @@ jobs:
           cmake:p
           gcc:p
           ninja:p
+          libpng:p
         install: >-
           zip
           make
