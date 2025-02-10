@@ -48,7 +48,7 @@ jobs:
     - name: Build
       shell: msys2 {0}
       # Build your program with the given configuration
-      run: cmake --build build_${{matrix.sys}}_${{env.BUILD_TYPE}} --config ${{env.BUILD_TYPE}} && cmake --install
+      run: cmake --build build_${{matrix.sys}}_${{env.BUILD_TYPE}} --config ${{env.BUILD_TYPE}} && cmake --install . --config ${{env.BUILD_TYPE}}
 
     - name: Test
       shell: msys2 {0}
